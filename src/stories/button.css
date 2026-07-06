@@ -1,0 +1,88 @@
+.ds-button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--radius-radius-06);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--family-primary);
+  font-size: var(--size-interactive);
+  font-weight: var(--weight-medium);
+  gap: 10px;
+  justify-content: center;
+  line-height: 1.25;
+  min-width: max-content;
+  padding: 16px 32px;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease;
+}
+
+.ds-button:focus-visible {
+  box-shadow: var(--ds-shadow-focus);
+  outline: none;
+}
+
+.ds-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.ds-button--primary,
+.ds-button--primary.ds-button--default {
+  background: var(--button-primary-background-default);
+  border-color: var(--button-primary-stroke-default);
+  color: var(--button-primary-text-default);
+}
+
+.ds-button--primary:not(:disabled):hover,
+.ds-button--primary.ds-button--hover {
+  background: var(--button-primary-background-hover);
+  border-color: var(--button-primary-stroke-hover);
+  color: var(--button-primary-text-hover);
+}
+
+.ds-button--primary:not(:disabled):active,
+.ds-button--primary.ds-button--pressed {
+  background: var(--button-primary-background-pressed);
+  border-color: var(--button-primary-stroke-pressed);
+  color: var(--button-primary-text-pressed);
+}
+
+.ds-button--secondary,
+.ds-button--secondary.ds-button--default {
+  background: var(--button-secondary-background-default);
+  border-color: var(--button-secondary-stroke-default);
+  color: var(--button-secondary-text-default);
+}
+
+.ds-button--secondary:not(:disabled):hover,
+.ds-button--secondary.ds-button--hover {
+  background: var(--button-secondary-background-hover);
+  border-color: var(--button-secondary-stroke-hover);
+  color: var(--button-secondary-text-hover);
+}
+
+.ds-button--secondary:not(:disabled):active,
+.ds-button--secondary.ds-button--pressed {
+  background: var(--button-secondary-background-pressed);
+  border-color: var(--button-secondary-stroke-pressed);
+  color: var(--button-secondary-text-pressed);
+}
+
+.ds-button--sm {
+  font-size: 14px;
+  min-height: 44px;
+  padding: 12px 24px;
+}
+
+.ds-button--md {
+  min-height: 52px;
+}
+
+.ds-button--lg {
+  font-size: 18px;
+  min-height: 60px;
+  padding: 18px 40px;
+}

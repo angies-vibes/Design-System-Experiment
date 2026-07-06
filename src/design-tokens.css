@@ -1,0 +1,183 @@
+/*
+ * Source: Figma Prototyping Design System
+ * https://www.figma.com/design/ZBYvgBfGbtDjBLl9mHsNp3/Prototyping-Design-System?node-id=15-355
+ */
+
+:root,
+[data-theme='default'],
+[data-theme='light'] {
+  --breakpoint: Desktop;
+  --display-width: 1512px;
+  --display-height: 982px;
+  --icon: 'String value';
+
+  --radius-radius-01: 0px;
+  --radius-radius-02: 2px;
+  --radius-radius-03: 4px;
+  --radius-radius-04: 8px;
+  --radius-radius-05: 24px;
+  --radius-radius-06: 10000px;
+
+  --black-alpha-100: #1a1a1a;
+  --black-alpha-75: #1a1a1abf;
+  --black-alpha-50: #1a1a1a80;
+  --black-alpha-25: #1a1a1a40;
+  --black-alpha-10: #1a1a1a1a;
+  --black-alpha-5: #1a1a1a0d;
+  --black-flattened-100: #1a1a1a;
+  --black-flattened-75: #545454;
+  --black-flattened-50: #8d8d8d;
+  --black-flattened-25: #c6c6c6;
+  --black-flattened-10: #e8e8e8;
+  --black-flattened-5: #f4f4f4;
+
+  --gray-alpha-100: #707070;
+  --blue-alpha-100: #314af1;
+  --purple-alpha-100: #787fd2;
+  --lavender-alpha-100: #e5e3f9;
+
+  --orange-alpha-100: #ee7e3e;
+  --orange-alpha-75: #ee7e3ebf;
+  --orange-alpha-50: #ee7e3e80;
+  --orange-alpha-25: #ee7e3e40;
+  --orange-alpha-10: #ee7e3e1a;
+  --orange-alpha-5: #ee7e3e0d;
+  --orange-flattened-100: #ee7e3e;
+  --orange-flattened-75: #f29e6e;
+  --orange-flattened-50: #f7be9e;
+  --orange-flattened-25: #fbdfcf;
+  --orange-flattened-10: #fdf2ec;
+  --orange-flattened-5: #fef9f5;
+
+  --white-alpha-100: #f2f2f2;
+  --white-alpha-75: #f2f2f2bf;
+  --white-alpha-50: #f2f2f280;
+  --white-alpha-25: #f2f2f240;
+  --white-alpha-10: #f2f2f21a;
+  --white-alpha-5: #f2f2f20d;
+  --white-flattened-100: #f2f2f2;
+  --white-flattened-75: #f5f5f5;
+  --white-flattened-50: #f9f9f9;
+  --white-flattened-25: #fcfcfc;
+  --white-flattened-10: #fefefe;
+  --white-flattened-5: #fefefe;
+
+  --text-primary: var(--black-alpha-100);
+  --text-secondary: var(--black-alpha-75);
+  --text-tertiary: var(--black-alpha-50);
+  --section-primary: var(--white-flattened-100);
+
+  --button-primary-background-default: var(--orange-alpha-100);
+  --button-primary-background-hover: var(--orange-alpha-50);
+  --button-primary-background-pressed: var(--orange-alpha-5);
+  --button-primary-text-default: var(--black-flattened-100);
+  --button-primary-text-hover: var(--black-flattened-100);
+  --button-primary-text-pressed: var(--black-flattened-100);
+  --button-primary-stroke-default: var(--black-alpha-100);
+  --button-primary-stroke-hover: var(--black-alpha-50);
+  --button-primary-stroke-pressed: var(--black-alpha-100);
+
+  --button-secondary-background-default: var(--black-alpha-5);
+  --button-secondary-background-hover: var(--black-alpha-25);
+  --button-secondary-background-pressed: var(--black-alpha-100);
+  --button-secondary-text-default: var(--black-flattened-100);
+  --button-secondary-text-hover: var(--black-flattened-100);
+  --button-secondary-text-pressed: var(--white-flattened-100);
+  --button-secondary-stroke-default: var(--black-alpha-100);
+  --button-secondary-stroke-hover: var(--black-alpha-50);
+  --button-secondary-stroke-pressed: var(--black-alpha-100);
+
+  --hero-background-dark: var(--black-alpha-100);
+  --hero-background-blue: var(--blue-alpha-100);
+  --hero-background-orange: var(--orange-alpha-100);
+  --hero-background-lavender: var(--lavender-alpha-100);
+  --hero-background-purple: var(--purple-alpha-100);
+  --hero-accent-blue: var(--blue-alpha-100);
+  --hero-accent-orange: var(--orange-alpha-100);
+  --hero-accent-lavender: var(--lavender-alpha-100);
+  --hero-accent-purple: var(--purple-alpha-100);
+  --hero-overlay-image: var(--gray-alpha-100);
+  --hero-icon-light: var(--white-alpha-100);
+  --hero-text-light: var(--white-alpha-100);
+  --hero-text-purple: var(--purple-alpha-100);
+
+  --family-primary: Montserrat, Arial, sans-serif;
+  --family-secondary: Montserrat, Arial, sans-serif;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --size-title: 56px;
+  --size-body: 16px;
+  --size-interactive: 16px;
+
+  --ds-font-family-sans: var(--family-primary);
+  --ds-color-background: var(--section-primary);
+  --ds-color-surface: var(--white-flattened-100);
+  --ds-color-text: var(--text-primary);
+  --ds-color-text-muted: var(--text-secondary);
+  --ds-color-text-inverse: var(--white-alpha-100);
+  --ds-color-border: var(--black-alpha-100);
+  --ds-color-brand: var(--button-primary-background-default);
+  --ds-color-brand-hover: var(--button-primary-background-hover);
+  --ds-color-brand-active: var(--button-primary-background-pressed);
+  --ds-color-secondary-hover: var(--button-secondary-background-hover);
+  --ds-color-secondary-active: var(--button-secondary-background-pressed);
+  --ds-color-focus-ring: var(--orange-alpha-25);
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 12px;
+  --ds-space-4: 16px;
+  --ds-space-5: 20px;
+  --ds-space-6: 24px;
+  --ds-radius-sm: var(--radius-radius-03);
+  --ds-radius-md: var(--radius-radius-04);
+  --ds-radius-full: var(--radius-radius-06);
+  --ds-shadow-focus: 0 0 0 4px var(--ds-color-focus-ring);
+}
+
+[data-theme='dark'] {
+  --text-primary: var(--white-alpha-100);
+  --text-secondary: var(--white-alpha-75);
+  --text-tertiary: var(--white-alpha-50);
+  --section-primary: var(--black-flattened-100);
+
+  --button-primary-background-default: var(--orange-alpha-100);
+  --button-primary-background-hover: var(--orange-alpha-25);
+  --button-primary-background-pressed: var(--orange-alpha-5);
+  --button-primary-text-default: var(--white-flattened-100);
+  --button-primary-text-hover: var(--white-flattened-100);
+  --button-primary-text-pressed: var(--white-flattened-100);
+  --button-primary-stroke-default: var(--white-alpha-100);
+  --button-primary-stroke-hover: var(--white-alpha-100);
+  --button-primary-stroke-pressed: var(--white-alpha-100);
+
+  --button-secondary-background-default: var(--white-alpha-5);
+  --button-secondary-background-hover: var(--white-alpha-25);
+  --button-secondary-background-pressed: var(--white-alpha-100);
+  --button-secondary-text-default: var(--white-flattened-100);
+  --button-secondary-text-hover: var(--white-alpha-100);
+  --button-secondary-text-pressed: var(--black-flattened-100);
+  --button-secondary-stroke-default: var(--white-alpha-100);
+  --button-secondary-stroke-hover: var(--white-alpha-100);
+  --button-secondary-stroke-pressed: var(--white-alpha-100);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --breakpoint: Tablet-Landscape;
+    --display-width: 1024px;
+    --display-height: 768px;
+    --size-title: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --breakpoint: Mobile;
+    --display-width: 375px;
+    --display-height: 812px;
+    --radius-radius-05: 16px;
+    --size-title: 40px;
+    --size-body: 14px;
+    --size-interactive: 14px;
+  }
+}
