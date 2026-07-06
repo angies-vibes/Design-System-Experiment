@@ -1,22 +1,25 @@
 import { Button } from './Button';
+import type { ButtonMode } from './Button';
 import './hero.css';
 
 export interface HeroProps {
   title?: string;
   body?: string;
   ctaLabel?: string;
+  mode?: ButtonMode;
 }
 
 export const Hero = ({
   title = "It's never too late to try something new",
   body = 'Three paths lead to knowledge, the path of reflection is the noblest, the path of imitation is the easiest, and the path of experience is the bitterest.',
   ctaLabel = 'Book Now',
+  mode = 'default',
 }: HeroProps) => (
   <section className="ds-hero">
     <div className="ds-hero__copy">
       <h1>{title}</h1>
       <p>{body}</p>
-      <Button label={ctaLabel} variant="primary" />
+      <Button label={ctaLabel} mode={mode} variant="primary" />
     </div>
 
     <div className="ds-hero__art" aria-hidden="true">
